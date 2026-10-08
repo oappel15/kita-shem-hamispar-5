@@ -202,3 +202,39 @@ code{background:#EAF5F1;padding:0 .3em;border-radius:6px;direction:ltr;unicode-b
   .tnote{break-inside:avoid}
   @page{size:A4;margin:14mm}
 }
+/* ---------- stations: printable task cards (teacher area) ---------- */
+.callout-box{background:#fff;border:2px solid var(--line);border-radius:16px;padding:.3em 1.1em .6em;margin:.8em 0}
+.callout-box h2{margin-top:.4em}
+.spanel{border:2px solid var(--line);border-radius:14px;background:#fff;margin:.6em 0;padding:.4em 1em;display:flex;flex-wrap:wrap;gap:6px 18px}
+.spanel legend{font-weight:700;padding:0 .3em}.spanel label{cursor:pointer}
+.scards{display:flex;flex-direction:column;gap:18px;margin-top:14px}
+.scard{background:#fff;border:2px solid var(--line);border-radius:16px;padding:16px 22px}
+.sc-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px;border-bottom:2px dashed #B9D9D2;padding-bottom:.3em;margin-bottom:.5em}
+.sc-head h2{margin:0;font-size:1.35rem}.sc-n{background:var(--mint);border-radius:999px;padding:.05em .7em;font-weight:700}
+.sc-meta{margin:0;color:var(--ink2);font-size:.92rem;flex-basis:100%}
+.sc-steps{margin:.3em 0}.sc-tip{background:var(--lemon);border-radius:12px;padding:.3em .8em;margin:.5em 0}
+.cutgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin:.6em 0}
+.cut{border:1.5px dashed #8FA9A2;text-align:center;font-weight:700;font-size:1.15rem;padding:.55em .2em}
+.squiz{padding-inline-start:1.4em;margin:.3em 0}.squiz>li{margin:.35em 0;break-inside:avoid}
+.ql{display:inline-block;background:var(--sky);border-radius:8px;padding:0 .45em;font-size:.8rem;font-weight:700}
+.opts{list-style:none;padding:0;margin:.15em 0;display:grid;grid-template-columns:1fr 1fr;gap:2px 14px}
+.ob{display:inline-block;border:1.5px solid #8FA9A2;border-radius:999px;width:1.5em;text-align:center;font-weight:700;margin-inline-end:.2em}
+.sboard{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:.5em 0}
+.sboard div{border:2px solid var(--line);border-radius:12px;padding:.35em .7em;font-size:.95rem}.sboard b{display:block}.sboard i{display:block;font-style:normal;color:var(--okt);font-size:.88rem}
+.checks{list-style:none;padding:0}.rules-p li{margin:.4em 0;font-size:1.1rem}
+.akey{padding-inline-start:1.4em;margin:.2em 0}.akey li{margin:.15em 0}
+.scard.answers{background:#FBFDF9}
+.scard.dense{font-size:.96em}
+.swrap[hidden]{display:none!important}
+@media print{
+  body.stations .scards{display:block;margin:0}
+  .scard{border:0;border-radius:0;padding:0;margin:0}
+  body.stations:not(.flow) .swrap{break-after:page}
+  body.stations:not(.flow) .swrap:last-of-type{break-after:auto}
+  body.stations.flow .scard{border-top:1.5px dashed #8FA9A2;padding-top:6mm;margin-top:6mm}
+  .sc-head,.cutgrid,.wsbins,.sboard,.ws tr,.akey li,.rules-p li{break-inside:avoid}
+  .scard.dense{font-size:11pt;line-height:1.35}
+  .sc-n,.sc-tip,.ql,.sboard div{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .cut{font-size:13pt;padding:5mm 1mm}
+}
+@media (max-width:560px){.cutgrid{grid-template-columns:repeat(3,1fr)}.opts,.sboard{grid-template-columns:1fr}}
