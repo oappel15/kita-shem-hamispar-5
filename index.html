@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="he" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>שם המספר · מצגת לשיעור שפה · כיתה ה׳</title>
+<meta name="description" content="מצגת אינטראקטיבית לשיעור שפה בכיתה ה׳ על שם המספר: זכר ונקבה, שלושת הספרים, מונה וסודר, טעויות נפוצות – עם משימת מיון, בלשי טעויות, חידון בזק, משימה בזוגות וכרטיס יציאה.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700&family=Varela+Round&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/deck.css"></head>
+<body class="deck-page">
+<a class="skip" href="#deck">דילוג למצגת</a>
+<header class="topbar" role="banner">
+  <div class="brand"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><rect x="4" y="10" width="26" height="26" rx="7" fill="#CFE6FB" stroke="#22313A" stroke-width="3"/><rect x="34" y="28" width="26" height="26" rx="7" fill="#FBE0EA" stroke="#22313A" stroke-width="3"/><text x="17" y="31" font-family="Arial" font-weight="700" font-size="20" text-anchor="middle" fill="#22313A">3</text><text x="47" y="49" font-family="Arial" font-weight="700" font-size="20" text-anchor="middle" fill="#22313A">5</text></svg><span>שם המספר · כיתה ה׳</span></div>
+  <span class="phase" id="phase" aria-live="off"></span>
+  <div class="tools">
+    <div class="timer" role="group" aria-label="שעון לשלב">
+      <button type="button" class="tbtn" id="timer-btn" aria-label="הפעלת שעון לשלב">⏱ <span id="timer-out">0:00</span></button>
+      <button type="button" class="tbtn sm" id="timer-reset" aria-label="איפוס השעון">↺</button>
+    </div>
+    <button type="button" class="tbtn" id="notes-btn" aria-haspopup="dialog">🔐 <span class="hide-sm">הערות למורה</span></button>
+    <button type="button" class="tbtn" id="fs-btn" aria-label="מסך מלא">⛶ <span class="hide-sm">מסך מלא</span></button>
+  </div>
+</header>
+
+<main id="deck" class="deck" tabindex="-1" aria-roledescription="מצגת" aria-label="מצגת: שם המספר">
+
+<!-- 1 -->
+<section class="slide s-title" id="title" data-phase="פתיחה" data-min="1" aria-label="שקופית פתיחה">
+  <div class="title-wrap">
+    <div>
+      <p class="kicker">שיעור שפה · כיתה ה׳ · 45 דקות</p>
+      <h1>שם המספר<br><span>שלושה ספרים או שלוש ספרים?</span></h1>
+      <p class="lead">היום תלמידים ותלמידות יגלו איך סופרים נכון בעברית: מתי <b class="m">שלושה</b> ומתי <b class="f">שלוש</b>, מה זה <b>שלושת הספרים</b>, ומה ההבדל בין <b>שלוש</b> ל<b>שלישי</b>.</p>
+      <ul class="agenda" aria-label="מבנה השיעור">
+        <li class="c-coral">פתיחה · 5 דק׳</li><li class="c-lemon">הקנייה · 13 דק׳</li><li class="c-mint">משימות · 21 דק׳</li><li class="c-sky">סיכום וכרטיס יציאה · 6 דק׳</li>
+      </ul>
+      <p class="hint">מעבר בין שקופיות: מקש → או רווח (הבאה), מקש ← (הקודמת), לחיצה על אזור ריק, החלקה במסך מגע, או הכפתורים למטה.</p>
+    </div>
+    <svg class="title-art" viewBox="0 0 420 360" role="img" aria-label="איור: שלושה ספרים בכרטיס כחול, ושלוש מחברות בכרטיס ורוד">
+      <rect x="18" y="20" width="185" height="300" rx="28" fill="#CFE6FB" stroke="#22313A" stroke-width="4"/>
+      <rect x="217" y="40" width="185" height="300" rx="28" fill="#FBE0EA" stroke="#22313A" stroke-width="4"/>
+      <text x="110" y="92" font-family="Varela Round,Arial" font-size="40" text-anchor="middle" fill="#1D4E7E">שלושה</text>
+      <text x="310" y="112" font-family="Varela Round,Arial" font-size="40" text-anchor="middle" fill="#7C2C4E">שלוש</text>
+      <g stroke="#22313A" stroke-width="3">
+        <rect x="52" y="130" width="34" height="140" rx="5" fill="#9CC9F2"/><rect x="92" y="122" width="34" height="148" rx="5" fill="#FFE07A"/><rect x="132" y="136" width="34" height="134" rx="5" fill="#9FE0C4"/>
+        <rect x="246" y="150" width="128" height="40" rx="8" fill="#FFB8C8"/><rect x="246" y="196" width="128" height="40" rx="8" fill="#FFE07A"/><rect x="246" y="242" width="128" height="40" rx="8" fill="#C9B6F2"/>
+      </g>
+      <g stroke="#22313A" stroke-width="2"><line x1="58" y1="150" x2="80" y2="150"/><line x1="98" y1="142" x2="120" y2="142"/><line x1="138" y1="156" x2="160" y2="156"/>
+      <line x1="262" y1="158" x2="262" y2="182"/><line x1="262" y1="204" x2="262" y2="228"/><line x1="262" y1="250" x2="262" y2="274"/></g>
+      <text x="110" y="304" font-family="Assistant,Arial" font-weight="700" font-size="26" text-anchor="middle" fill="#1D4E7E">ספרים</text>
+      <text x="310" y="318" font-family="Assistant,Arial" font-weight="700" font-size="26" text-anchor="middle" fill="#7C2C4E">מחברות</text>
+    </svg>
+  </div>
+</section>
+
+<!-- 2 -->
+<section class="slide" id="hook" data-phase="פתיחה" data-min="3" aria-label="פתיחה: השלט ביריד">
+  <span class="tag c-coral">🔍 שאלת פתיחה</span>
+  <h2>השלט של הדוכן ביריד הכיתה</h2>
+  <div class="two wide">
+    <div class="sign" aria-label="שלט הדוכן">
+      <h3>🍦 דוכן כיתה ה׳ – מבצעים!</h3>
+      <ol>
+        <li>שלוש ארטיקים ב־10 ₪</li>
+        <li>שתיים עוגיות ב־5 ₪</li>
+        <li>חמש פיתות עם גבינה ב־12 ₪</li>
+        <li>קונים ארבעה בקבוקי מים – מקבלים אחד חינם</li>
+      </ol>
+    </div>
+    <div>
+      <p class="big"><b>כמה טעויות לשון יש בשלט?</b></p>
+      <p>הראו באצבעות, בלי לדבר: 0, 1, 2 או 3.</p>
+      <div class="vote" aria-hidden="true"><span>0</span><span>1</span><span>2</span><span>3</span></div>
+      <p>ואם מצאתם – איך הייתם מתקנים?</p>
+      <button type="button" class="btn" data-reveal="hook-ans" aria-expanded="false">חשיפת התשובה</button>
+      <div class="reveal-box" id="hook-ans" hidden>
+        <b>2 טעויות:</b> <span class="m">ארטיק</span> הוא שם בזכר (ארטיק אחד) ← <b>שלושה ארטיקים</b>. לפני שם אומרים <b>שתי</b> ולא ״שתיים״ ← <b>שתי עוגיות</b>.<br>
+        <b>חמש פיתות</b> ו<b>ארבעה בקבוקים</b> – נכון! היום נבין למה.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3 -->
+<section class="slide" id="goals" data-phase="פתיחה" data-min="1" aria-label="מה נלמד היום">
+  <span class="tag c-lemon">🎯 מטרות השיעור</span>
+  <h2>בסוף השיעור תלמידים ותלמידות יוכלו…</h2>
+  <div class="tiles">
+    <div class="tile-card c-sky"><h3>1. להבחין</h3><p>בין שם המספר בזכר לשם המספר בנקבה, ולבחור נכון:</p><span class="ex"><span class="m">שלושה ספרים</span> · <span class="f">שלוש מחברות</span></span></div>
+    <div class="tile-card c-rose"><h3>2. ליידע</h3><p>מספר לפני שם עם ה׳ הידיעה:</p><span class="ex">שלושת הספרים</span></div>
+    <div class="tile-card c-mint"><h3>3. לסדר</h3><p>להבחין בין מספר מונה (כמה?) למספר סודר (איזה במקום?):</p><span class="ex">שלוש · השלישית</span></div>
+    <div class="tile-card c-lemon"><h3>4. לתקן</h3><p>למצוא טעויות נפוצות בשם המספר ולהסביר את התיקון.</p><span class="ex">״שתיים מחברות״ ✗</span></div>
+  </div>
+  <p class="callout">💡 <b>שם המספר</b> הוא מילה שאומרת <b>כמה</b> יש או <b>איזה</b> במקום: שתיים, חמישה, עשר, ראשון, שלישית…</p>
+</section>
+
+<!-- 4 -->
+<section class="slide" id="uses" data-phase="הקנייה" data-min="2" aria-label="ארבעה תפקידים לשם המספר">
+  <span class="tag c-lemon">📘 הקנייה 1</span>
+  <h2>בשביל מה צריך את שם המספר? ארבעה תפקידים</h2>
+  <div class="tiles">
+    <div class="tile-card c-sky"><p class="q">כמה?</p><h3>כמות</h3><span class="ex">שלושה חלונות ושתי דלתות</span><p>מתאים למין של השם: זכר או נקבה.</p></div>
+    <div class="tile-card c-mint"><p class="q">איזה במקום?</p><h3>סדר (סודר)</h3><span class="ex">בשורה השנייה</span><p>ראשון, שני, שלישי… – בא אחרי השם, כמו תואר.</p></div>
+    <div class="tile-card c-lilac"><p class="q">איזה מספר?</p><h3>זיהוי (מספר סתמי)</h3><span class="ex">בית מספר חמש · קו שתיים</span><p>תמיד בצורת הנקבה.</p></div>
+    <div class="tile-card c-coral"><p class="q">מתי?</p><h3>תאריך</h3><span class="ex">בתשעה בחודש</span><p>בצורת הזכר, כי מתכוונים ל״יום״.</p></div>
+  </div>
+  <p class="callout">🗣️ <b>בזוגות, 30 שניות:</b> מצאו בכיתה דוגמה לכל תפקיד. למשל: כמה כיסאות יש בשורה? באיזו שורה אתם יושבים?</p>
+</section>
+
+<!-- 5 -->
+<section class="slide" id="gender" data-phase="הקנייה" data-min="3" aria-label="זכר ונקבה: שלושה ושלוש">
+  <span class="tag c-lemon">📘 הקנייה 2</span>
+  <h2>זכר ונקבה במספרים 1–10: הפוך על הפוך!</h2>
+  <div class="two wide">
+    <table class="ntable" aria-label="שמות המספר 1 עד 10 עם ספר (זכר) ומחברת (נקבה)">
+      <thead><tr><th scope="col" class="num">#</th><th scope="col" class="hm">ספר <span class="mtag">זכר</span></th><th scope="col" class="hf">מחברת <span class="ftag">נקבה</span></th></tr></thead>
+      <tbody>
+        <tr><td class="num">1</td><td class="hm">ספר אחד</td><td class="hf">מחברת אחת</td></tr>
+        <tr><td class="num">2</td><td class="hm">שני ספרים</td><td class="hf">שתי מחברות</td></tr>
+        <tr><td class="num">3</td><td class="hm">שלוש<mark>ה</mark> ספרים</td><td class="hf">שלוש מחברות</td></tr>
+        <tr><td class="num">4</td><td class="hm">ארבע<mark>ה</mark> ספרים</td><td class="hf">ארבע מחברות</td></tr>
+        <tr><td class="num">5</td><td class="hm">חמיש<mark>ה</mark> ספרים</td><td class="hf">חמש מחברות</td></tr>
+        <tr><td class="num">6</td><td class="hm">שיש<mark>ה</mark> ספרים</td><td class="hf">שש מחברות</td></tr>
+        <tr><td class="num">7</td><td class="hm">שבע<mark>ה</mark> ספרים</td><td class="hf">שבע מחברות</td></tr>
+        <tr><td class="num">8</td><td class="hm">שְׁמוֹנָה ספרים</td><td class="hf">שְׁמוֹנֶה מחברות</td></tr>
+        <tr><td class="num">9</td><td class="hm">תשע<mark>ה</mark> ספרים</td><td class="hf">תשע מחברות</td></tr>
+        <tr><td class="num">10</td><td class="hm">עשר<mark>ה</mark> ספרים</td><td class="hf">עשר מחברות</td></tr>
+      </tbody>
+    </table>
+    <div>
+      <p class="rule">⭐ <b>הכלל (3–10):</b> לשם <b class="m">בזכר</b> – מספר <b>עם ה׳</b> בסוף (שלושה).<br>לשם <b class="f">בנקבה</b> – מספר <b>בלי ה׳</b> (שלוש).</p>
+      <p class="callout">🤯 <b>למה ״הפוך״?</b> בדרך כלל ה׳ בסוף מסמנת נקבה: ילד – ילדה, טוב – טובה. אצל המספרים זה הפוך!</p>
+      <p class="callout">🔤 <b>8:</b> כותבים אותו דבר, אבל אומרים אחרת: שְׁמוֹנָה (בזכר) – שְׁמוֹנֶה (בנקבה).</p>
+      <p><button type="button" class="btn ghost sm" id="say-table" data-nonav>🔊 הקראת הטבלה</button> <span class="small" id="say-msg" aria-live="polite"></span></p>
+    </div>
+  </div>
+</section>
+
+<!-- 6 -->
+<section class="slide" id="onetwo" data-phase="הקנייה" data-min="2" aria-label="אחד ושניים: מקרים מיוחדים">
+  <span class="tag c-lemon">📘 הקנייה 3</span>
+  <h2>1 ו־2: מקרים מיוחדים</h2>
+  <div class="tiles three">
+    <div class="tile-card c-sky"><h3>1 בא <u>אחרי</u> השם</h3><span class="ex">ספר אחד</span> <span class="ex">מחברת אחת</span><p>לא אומרים ״אחד ספר״.</p></div>
+    <div class="tile-card c-rose"><h3>2 לפני שם: <u>שני</u> / <u>שתי</u></h3><span class="ex">שני ספרים</span> <span class="ex">שתי מחברות</span><p>לא ״שניים ספרים״ ולא ״שתיים מחברות״.</p></div>
+    <div class="tile-card c-mint"><h3>בלי שם אחריו: שניים / שתיים</h3><p>– כמה ספרים יש לך?<br>– <b>שניים</b>.</p><p>– כמה מחברות?<br>– <b>שתיים</b>.</p></div>
+  </div>
+  <p class="callout">✍️ <b>כתיב:</b> <b>שניים, שתיים</b> (שתי יו״ד) כשהמספר עומד לבד · <b>שני, שתי</b> (יו״ד אחת) כשבא אחריו שם · וגם <b>שנים עשר</b>, <b>שתים עשרה</b> – ביו״ד אחת.</p>
+</section>
+
+<!-- 7 -->
+<section class="slide" id="singular" data-phase="הקנייה" data-min="2" aria-label="בודקים ביחיד: זכר או נקבה">
+  <span class="tag c-lemon">📘 הקנייה 4</span>
+  <h2>זכר או נקבה? הטריק: בודקים ביחיד!</h2>
+  <p class="big">הסוף של צורת הרבים (־ים / ־ות) <b>לא תמיד</b> מגלה את המין. אומרים את השם ביחיד: <b>אחד</b> או <b>אחת</b>?</p>
+  <div class="flips" id="flips">
+    <button type="button" class="flip is-m" aria-expanded="false"><span class="w">חלונות</span><span class="a" hidden>חלון <b>אחד</b> ← <b class="m">שלושה חלונות</b></span></button>
+    <button type="button" class="flip is-f" aria-expanded="false"><span class="w">ביצים</span><span class="a" hidden>ביצה <b>אחת</b> ← <b class="f">חמש ביצים</b></span></button>
+    <button type="button" class="flip is-m" aria-expanded="false"><span class="w">לילות</span><span class="a" hidden>לילה <b>אחד</b> ← <b class="m">שבעה לילות</b></span></button>
+    <button type="button" class="flip is-f" aria-expanded="false"><span class="w">שנים</span><span class="a" hidden>שנה <b>אחת</b> ← <b class="f">שלוש שנים</b></span></button>
+    <button type="button" class="flip is-m" aria-expanded="false"><span class="w">שולחנות</span><span class="a" hidden>שולחן <b>אחד</b> ← <b class="m">ארבעה שולחנות</b></span></button>
+    <button type="button" class="flip is-f" aria-expanded="false"><span class="w">מילים</span><span class="a" hidden>מילה <b>אחת</b> ← <b class="f">עשר מילים</b></span></button>
+  </div>
+  <p class="small">לחצו על כרטיס כדי לגלות. קודם מנחשים בקול – אחר כך בודקים.</p>
+</section>
+
+<!-- 8 -->
+<section class="slide" id="construct" data-phase="הקנייה" data-min="2" aria-label="שלושת הספרים: מספר לפני שם מיודע">
+  <span class="tag c-lemon">📘 הקנייה 5</span>
+  <h2>״שלושה ספרים״ או ״שלושת הספרים״?</h2>
+  <div class="two">
+    <div>
+      <p class="big">כשמדברים על דברים <b>מסוימים</b>, שכבר מכירים, מוסיפים לשם <b>ה׳ הידיעה</b>. אז המספר משתנה:</p>
+      <table class="ntable compact" aria-label="מספרים לפני שם מיודע">
+        <thead><tr><th scope="col">סתם</th><th scope="col">מיודע (מסוים)</th></tr></thead>
+        <tbody>
+          <tr><td>שלושה ספרים</td><td><b class="m">שלושת</b> הספרים</td></tr>
+          <tr><td>חמישה ימים</td><td><b class="m">חמשת</b> הימים</td></tr>
+          <tr><td>עשרה ילדים</td><td><b class="m">עשרת</b> הילדים</td></tr>
+          <tr><td>שני ספרים</td><td><b>שני</b> הספרים</td></tr>
+          <tr><td>שלוש מחברות</td><td><b class="f">שלוש</b> המחברות</td></tr>
+          <tr><td>שתי מחברות</td><td><b>שתי</b> המחברות</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <p class="rule">⭐ <b>בזכר</b> (3–10) המספר מקבל <b>־ת</b> בסוף:<br>שלושת, ארבעת, חמשת, ששת, שבעת, שמונת, תשעת, עשרת + ה…</p>
+      <p class="callout">🎀 <b>בנקבה</b> הכתיבה לא משתנה: שלוש המחברות, חמש הבנות.</p>
+      <p class="callout">❌ ״שלושה הספרים״ – לא נכון. ✅ <b>שלושת הספרים</b>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 9 -->
+<section class="slide" id="ordinal" data-phase="הקנייה" data-min="2" aria-label="מונה וסודר">
+  <span class="tag c-lemon">📘 הקנייה 6</span>
+  <h2>מונה (כמה?) וסודר (איזה במקום?)</h2>
+  <div class="two wide">
+    <table class="ntable compact" aria-label="מספרים סודרים 1 עד 10 בזכר ובנקבה">
+      <thead><tr><th scope="col" class="num">#</th><th scope="col" class="hm">הבית… <span class="mtag">זכר</span></th><th scope="col" class="hf">הקומה… <span class="ftag">נקבה</span></th></tr></thead>
+      <tbody>
+        <tr><td class="num">1</td><td class="hm">הראשון</td><td class="hf">הראשונה</td></tr>
+        <tr><td class="num">2</td><td class="hm">השני</td><td class="hf">השנייה</td></tr>
+        <tr><td class="num">3</td><td class="hm">השלישי</td><td class="hf">השלישית</td></tr>
+        <tr><td class="num">4</td><td class="hm">הרביעי</td><td class="hf">הרביעית</td></tr>
+        <tr><td class="num">5</td><td class="hm">החמישי</td><td class="hf">החמישית</td></tr>
+        <tr><td class="num">6</td><td class="hm">השישי</td><td class="hf">השישית</td></tr>
+        <tr><td class="num">7</td><td class="hm">השביעי</td><td class="hf">השביעית</td></tr>
+        <tr><td class="num">8</td><td class="hm">השמיני</td><td class="hf">השמינית</td></tr>
+        <tr><td class="num">9</td><td class="hm">התשיעי</td><td class="hf">התשיעית</td></tr>
+        <tr><td class="num">10</td><td class="hm">העשירי</td><td class="hf">העשירית</td></tr>
+      </tbody>
+    </table>
+    <div>
+      <p class="rule">⭐ <b>הסודר בא אחרי השם</b> ומתאים לו כמו תואר – במין וב־ה׳ הידיעה: <b>הבית השלישי</b>, <b>בקומה החמישית</b>, <b>בפעם הראשונה</b>.</p>
+      <p class="callout">🔟 <b>מעל 10</b> אין צורה מיוחדת: ״הפרק החמישה עשר״ (כמו ״הפרק הראשון״), או כמספר סתמי: ״פרק חמש עשרה״.</p>
+      <p class="callout">🏠 <b>מספר סתמי – תמיד בנקבה:</b> בית מספר חמש · קו שתיים · עמוד אחת · ״שלוש ועוד ארבע – שבע״.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 10 -->
+<section class="slide" id="sort" data-phase="משימה 1 · זוגות" data-min="5" aria-label="משימה 1: מיון">
+  <span class="tag c-mint">🧩 משימה 1 · בזוגות · מיישמים</span>
+  <h2>שלושה או שלוש? מיינו את המילים</h2>
+  <p>בחרו מילה (לחיצה או גרירה) והעבירו אותה לסל המתאים. רמז: אמרו אותה ביחיד – <b>אחד</b> או <b>אחת</b>?</p>
+  <div class="sort-bank" id="sort-bank" aria-label="מילים למיון" data-nonav></div>
+  <div class="bins" data-nonav>
+    <div class="bin bm" data-bin="m" role="button" tabindex="0" aria-label="סל: שלושה (שמות בזכר)"><h3 class="m">שלושה ___</h3><div class="drop"></div></div>
+    <div class="bin bf" data-bin="f" role="button" tabindex="0" aria-label="סל: שלוש (שמות בנקבה)"><h3 class="f">שלוש ___</h3><div class="drop"></div></div>
+  </div>
+  <div class="task-bar" data-nonav>
+    <button type="button" class="btn" id="sort-check">בדיקה</button>
+    <button type="button" class="btn ghost" id="sort-reset">איפוס</button>
+    <span class="score" id="sort-score" aria-live="polite"></span>
+  </div>
+</section>
+
+<!-- 11 -->
+<section class="slide" id="hunt" data-phase="משימה 2 · זוגות" data-min="5" aria-label="משימה 2: בלשי טעויות">
+  <span class="tag c-mint">🕵️ משימה 2 · בזוגות · מנתחים</span>
+  <h2>בלשי המספרים: בכל משפט יש טעות אחת</h2>
+  <p>לחצו על המילה השגויה. אחרי שמצאתם – הסבירו לבן או לבת הזוג למה זו טעות. <span class="score" id="hunt-score" aria-live="polite"></span></p>
+  <div class="hunt" id="hunt-box" data-nonav></div>
+</section>
+
+<!-- 12 -->
+<section class="slide" id="quiz" data-phase="משימה 3 · כל הכיתה" data-min="5" aria-label="משימה 3: חידון בזק">
+  <span class="tag c-mint">⚡ משימה 3 · כל הכיתה</span>
+  <h2>חידון בזק</h2>
+  <div class="quiz" id="quiz-box" aria-live="polite"></div>
+  <div class="quiz-nav">
+    <button type="button" class="btn ghost sm" id="quiz-prev">› השאלה הקודמת</button>
+    <span id="quiz-count"></span>
+    <button type="button" class="btn ghost sm" id="quiz-next">השאלה הבאה ‹</button>
+    <span class="score" id="quiz-score"></span>
+  </div>
+</section>
+
+<!-- 13 -->
+<section class="slide" id="pairs" data-phase="משימה 4 · זוגות" data-min="6" aria-label="משימה 4: הדוכן שלנו">
+  <span class="tag c-mint">🤝 משימה 4 · בזוגות · יוצרים</span>
+  <h2>הדוכן שלנו: מתכננים מבצע ביריד הכיתה</h2>
+  <div class="two">
+    <div class="mission">
+      <p><b>המשימה:</b> תכננו בזוגות את הדוכן שלכם. בחרו דרך מהלוח, והקפידו שיהיו בה:</p>
+      <ul class="checks">
+        <li>שני שמות בזכר עם מספר 3–10 (למשל: שישה בלונים)</li>
+        <li>שני שמות בנקבה עם מספר 3–10 (למשל: שמונה מדבקות)</li>
+        <li>שני / שתי לפני שם</li>
+        <li>מספר לפני שם מיודע (שלושת ה… / ארבע ה…)</li>
+        <li>מספר סודר (הלקוח הראשון, בשורה השנייה…)</li>
+        <li>תאריך או מספר סתמי (בעשרה בחודש / שולחן מספר שש)</li>
+      </ul>
+      <p class="small"><b>בדיקת עמיתים:</b> מחליפים עם זוג אחר, בודקים לפי הרשימה ומסמנים ✓.</p>
+    </div>
+    <div class="board" aria-label="לוח בחירה: דרכים לביצוע">
+      <div class="way c-coral"><b>✍️ שלט או תפריט</b><p>כותבים שלט מבצעים לדוכן.</p><p class="crit">✓ 6 צירופים נכונים</p></div>
+      <div class="way c-sky"><b>🎨 קומיקס</b><p>3–4 משבצות עם בועות דיבור בדוכן.</p><p class="crit">✓ כל צירוף מסומן בצבע</p></div>
+      <div class="way c-lemon"><b>🎙️ פרסומת קולית</b><p>מקליטים פרסומת עד דקה.</p><p class="crit">✓ הגייה נכונה (שְׁמוֹנָה / שְׁמוֹנֶה!)</p></div>
+      <div class="way c-mint"><b>🎭 המחזה</b><p>מוכר או מוכרת וקונה מול הכיתה.</p><p class="crit">✓ 6 צירופים בשיחה</p></div>
+      <div class="way c-lilac"><b>🃏 משחק קלפים</b><p>10 כרטיסים: מספר + שם, לזוג אחר.</p><p class="crit">✓ מפתח תשובות נכון</p></div>
+      <div class="way c-rose"><b>📊 טבלת מלאי</b><p>טבלה: מה יש בדוכן וכמה.</p><p class="crit">✓ זכר ונקבה מסומנים</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 14 -->
+<section class="slide" id="summary" data-phase="איסוף וסיכום" data-min="3" aria-label="סיכום: חמשת הכללים">
+  <span class="tag c-sky">📌 איסוף וסיכום</span>
+  <h2>חמשת הכללים של שם המספר</h2>
+  <ol class="rules">
+    <li><span><b>בודקים ביחיד:</b> חלון <b>אחד</b> ← זכר · ביצה <b>אחת</b> ← נקבה.</span></li>
+    <li><span><b>3–10 הפוך:</b> <span class="m">זכר עם ה׳ – שלושה ספרים</span> · <span class="f">נקבה בלי ה׳ – שלוש מחברות</span>.</span></li>
+    <li><span><b>1 ו־2:</b> ספר <b>אחד</b> (אחרי השם) · <b>שני</b> ספרים, <b>שתי</b> מחברות (לפני השם).</span></li>
+    <li><span><b>מיודע:</b> <b>שלושת</b> הספרים · <b>שלוש</b> המחברות · <b>שני</b> הספרים.</span></li>
+    <li><span><b>סודר</b> אחרי השם ומתאים לו: הבית <b>השלישי</b>, הקומה <b>השלישית</b>. <b>מספר סתמי</b> – בנקבה: קו חמש.</span></li>
+  </ol>
+  <p class="callout">🗣️ <b>שתפו בזוג:</b> איזה כלל היה לכם הכי מפתיע? איזה כלל תזכרו מחר בבוקר?</p>
+</section>
+
+<!-- 15 -->
+<section class="slide" id="exit" data-phase="איסוף וסיכום" data-min="3" aria-label="כרטיס יציאה">
+  <span class="tag c-sky">🎟️ כרטיס יציאה</span>
+  <h2>כרטיס יציאה (בדף העבודה)</h2>
+  <ol class="exit">
+    <li>השלימו במילים: ״בקלמר שלי יש ___ (4) עפרונות ו־___ (2) מחקים.״ <span class="lvl">זוכרים</span></li>
+    <li>תקנו והסבירו: ״כתבתי בחיבור חמישה מילים חדשות.״ <span class="lvl">מיישמים</span></li>
+    <li>כתבו משפט על הכיתה שלכם עם <b>מספר לפני שם מיודע</b> ועם <b>מספר סודר</b>. <span class="lvl">יוצרים</span></li>
+  </ol>
+  <p class="self">איך הרגשתי היום? ☐ 😀 הבנתי היטב &nbsp; ☐ 🙂 כמעט &nbsp; ☐ 🤔 צריך עוד עזרה</p>
+</section>
+
+<!-- 16 -->
+<section class="slide" id="credits" data-phase="מקורות" data-min="0" aria-label="מקורות וקרדיטים">
+  <span class="tag c-lilac">📚 מקורות וקרדיטים</span>
+  <h2>מקורות וקרדיטים</h2>
+  <ul class="src">
+    <li><b>תוכנית הלימודים:</b> משרד החינוך, <a href="https://meyda.education.gov.il/files/Curriculum/hebrew-1-6.pdf#page=67" target="_blank" rel="noopener">״חינוך לשוני: עברית – שפה, ספרות ותרבות לבית הספר היסודי״</a> – ״נושאים ומונחים מתחום הלשון: שם המספר״ (עמ׳ 67), וציוני הדרך ״עד סוף כיתה ו׳״ בהישג נדרש 8 (<a href="https://meyda.education.gov.il/files/Curriculum/hebrew-1-6.pdf#page=90" target="_blank" rel="noopener">עמ׳ 90</a>). <a href="https://pop.education.gov.il/tchumey_daat/ivrit_chinhch_leshony/yesodi/pedagogy-hebrew-linguistic-education/curriculum/" target="_blank" rel="noopener">עמוד תוכנית הלימודים במרחב הפדגוגי</a>.</li>
+    <li><b>כללי הלשון:</b> האקדמיה ללשון העברית – <a href="https://hebrew-academy.org.il/category/%D7%A9%D7%9D-%D7%94%D7%9E%D7%A1%D7%A4%D7%A8/" target="_blank" rel="noopener">החלטות בנושא שם המספר</a> (נפרד ונסמך, מספר סתמי, יחיד או רבים בשם הנמנה), <a href="https://hebrew-academy.org.il/%D7%A9%D7%9D-%D7%94%D7%9E%D7%A1%D7%A4%D7%A8-%D7%A8%D7%A7%D7%A2-%D7%9C%D7%94%D7%97%D7%9C%D7%98%D7%95%D7%AA-%D7%94%D7%90%D7%A7%D7%93%D7%9E%D7%99%D7%94/" target="_blank" rel="noopener">״שם המספר – רקע להחלטות האקדמיה״</a>, <a href="https://hebrew-academy.org.il/%D7%97%D7%99%D7%93%D7%95%D7%9F-%D7%90%D7%99%D7%9A-%D7%A0%D7%9B%D7%95%D7%9F-%D7%9C%D7%95%D7%9E%D7%A8-%D7%90%D7%AA-%D7%94%D7%9E%D7%A1%D7%A4%D7%A8-%D7%A4%D7%AA%D7%A8%D7%95%D7%A0%D7%95%D7%AA/" target="_blank" rel="noopener">״חידון איך נכון לומר את המספר – פתרונות״</a>.</li>
+    <li>כל הטקסטים, המשפטים, המשימות והאיורים נכתבו וצוירו במיוחד למצגת הזו.</li>
+    <li>גופנים: Varela Round ו־Assistant (Google Fonts, רישיון SIL OFL).</li>
+  </ul>
+  <p class="made-by">נוצר עבור המורה · שפה, כיתה ה׳ · נבנה עם Kita</p>
+  <p class="small">אזור המורים (קוד מורה) כולל תוכנית זמנים, מפתח תשובות, התאמות והערות לכל שקופית. <a href="teacher.html">לאזור המורים</a> · <a href="handout.html">דף עבודה להדפסה</a></p>
+</section>
+
+</main>
+
+<nav class="deck-nav" aria-label="ניווט במצגת">
+  <button type="button" class="nbtn" id="prev" aria-label="השקופית הקודמת">הקודמת ›</button>
+  <div class="progress" aria-hidden="true"><i id="bar"></i></div>
+  <span class="counter" id="counter" aria-live="polite">1 / 16</span>
+  <button type="button" class="nbtn primary" id="next" aria-label="השקופית הבאה">‹ הבאה</button>
+</nav>
+
+<aside class="notes" id="notes" hidden aria-label="הערות למורה לשקופית הנוכחית">
+  <div class="notes-head"><b>🔐 הערות למורה</b> <span id="notes-slide"></span>
+    <button type="button" class="tbtn sm" id="notes-popout">חלון נפרד</button>
+    <button type="button" class="tbtn sm" id="notes-close" aria-label="סגירת ההערות">✕</button></div>
+  <div class="notes-body" id="notes-body"></div>
+</aside>
+
+<dialog class="gate" id="gate" aria-labelledby="gate-h">
+  <form method="dialog" id="gate-form">
+    <h2 id="gate-h">🔐 הערות למורה</h2>
+    <p>ההערות מיועדות למורה. הקלידו את הקוד:</p>
+    <label for="gate-pw" class="sr-only">קוד מורה</label>
+    <input id="gate-pw" type="password" inputmode="numeric" autocomplete="off">
+    <p class="err" id="gate-err" role="alert" hidden>הקוד לא נכון. נסו שוב.</p>
+    <div class="row"><button type="submit" class="btn" value="ok">כניסה</button><button type="button" class="btn ghost" id="gate-cancel">ביטול</button></div>
+  </form>
+</dialog>
+
+<div class="sr-only" id="announce" aria-live="polite"></div>
+<script type="text/plain" id="teacher-data">eyJ0aXRsZSI6ICI8cD48Yj7XnteY16jXqiDXlNep15nXoteV16g6PC9iPiDXqtec157XmdeT15nXnSDXldeq15zXnteZ15PXldeqINeZ15HXl9eZ16DXlSDXkdeZ158g15bXm9eoINec16DXp9eR15Qg15HXqdee15XXqiDXlNee16HXpNeoINeV15nXqdeq157XqdeVINeR15TXnSDXoNeb15XXnywg15nXm9eZ16jXlSDXkNeqINem15XXqNeqINeU16HXnteZ15vXldeqINec16TXoNeZINep150g157XmdeV15PXoiAo16nXnNeV16nXqiDXlNeh16TXqNeZ150pLCDXmdeR15fXmdeg15Ug15HXmdefINee15XXoNeUINec16HXldeT16gg15XXmdeW15TXlSDXldeZ16rXp9eg15Ug15jXoteV15nXldeqINeg16TXldem15XXqi48L3A+XG48dWw+PGxpPjxiPtee15HXoNeUOjwvYj4g16TXqteZ15fXlCA117Mgwrcg15TXp9eg15nXmdeUIDEz17Mgwrcg157XqdeZ157XldeqIDIx17Mgwrcg16HXmdeb15XXnSDXldeb16jXmNeZ16Eg15nXpteZ15DXlCA217MuINeU16nXoteV158g15HXodeo15LXnCDXlNei15zXmdeV158g157Xqteb15XXldeg158g15zXltee158g15TXnteV16bXoiDXnNeb15wg16nXp9eV16TXmdeqLjwvbGk+XG48bGk+PGI+15zXpNeg15kg15TXqdeZ16LXldeoOjwvYj4g15zXlNeT16TXmdehINeT16Mg16LXkdeV15PXlCAo16fXmdep15XXqCDXkdek15XXmNeoKSDXnNeb15wg16rXnNee15nXkyDXldeq15zXnteZ15PXlC4g15HXntep15nXnteUIDQg16bXqNeZ15og15PXpNeZ150g15XXpteR16LXmdedLCDXldeQ150g16jXldem15nXnSDXpNeo16HXldee16og16fXldec15nXqiDigJMg15jXnNek15XXnyDXkNeVINeY15DXkdec15guPC9saT5cbjxsaT7XlNei16jXldeqINeQ15zXlCDXkNek16nXqCDXnNek16rXldeXINeR17TXl9ec15XXnyDXoNek16jXk9e0INei15wg157XodeaINeU157Xl9ep15EsINeb15og16nXlNeb15nXqteUINec15Ag16jXldeQ15Qg15DXldeq158uPC9saT48L3VsPiIsICJob29rIjogIjxwPjxiPjMg15PXp9ezLjwvYj4g15vXnCDXlNeb15nXqteUINei15XXoNeUINeR15HXqiDXkNeX16osINeR15DXpteR16LXldeqLiDXnNeQINec16rXp9efINee15nXkyDigJMg15zXqdeQ15XXnCAy4oCTMyDXqtec157XmdeT15nXnSDXldeq15zXnteZ15PXldeqINeQ15nXmiDXlNeX15zXmdeY15UuPC9wPlxuPHVsPjxsaT48Yj7Xqtep15XXkdeUOiAyINeY16LXldeZ15XXqi48L2I+INe016nXnNeV16kg15DXqNeY15nXp9eZ153XtCDihpAgPGI+16nXnNeV16nXlCDXkNeo15jXmden15nXnTwvYj4gKNeQ16jXmNeZ16cg15DXl9eTIOKAkyDXlteb16gpLiDXtNep16rXmdeZ150g16LXldeS15nXldeq17Qg4oaQIDxiPtep16rXmSDXoteV15LXmdeV16o8L2I+ICjXnNek16DXmSDXqdedIOKAkyDXqdeq15kpLjwvbGk+XG48bGk+17TXl9ee16kg16TXmdeq15XXqte0ICjXpNeZ16rXlCDigJMg16DXp9eR15QpINeV17TXkNeo15HXoteUINeR16fXkdeV16fXmSDXnteZ153XtCAo15HXp9eR15XXpyDigJMg15bXm9eoKSDXoNeb15XXoNeZ150uINeo15HXmdedINeZ15fXqdeR15Ug16nXktedINeU150g16nXkteV15nXmdedIOKAkyDXntem15XXmdefLCDXlteUINeR15PXmdeV16cg157XlCDXqdeg15HXqNeoLjwvbGk+XG48bGk+15DXpNep16gg15zXqdeQ15XXnDog17TXnteUINeU15nXmdeq150g15vXldeq15HXmdedINeR16nXnNeYINep15wg15TXk9eV15vXnyDXqdec15vXnT/XtCDigJMg15XXnNeX15bXldeoINec15bXlCDXkdee16nXmdee15QgNC48L2xpPjwvdWw+IiwgImdvYWxzIjogIjxwPjxiPjEg15PXp9ezLjwvYj4g15zXlNen16jXmdeQINeQ16og15TXnteY16jXldeqINeV15zXlNeT15LXmdepOiDXqdedINeU157Xodek16gg15DXldee16ggPGI+15vXnteUPC9iPiDXkNeVIDxiPteQ15nXlteUINeR157Xp9eV1508L2I+LjwvcD5cbjx1bD48bGk+15TXnteY16jXldeqINee15HXldeh16HXldeqINei15wg16rXldeb16DXmdeqINeU15zXmdee15XXk9eZ150gKNep150g15TXnteh16TXqDog15TXkdeX16DXlCDXkdeZ158g15bXm9eoINec16DXp9eR15Qg15XXqdeZ157XldepINeq16fXmdefLCDXldep15nXnteV16nXmSDXqdedINeU157Xodek16gg15zXnteY16jXldeqINep15XXoNeV16opLiDXpteV16jXqiDXlNeh157Xmdeb15XXqiDXnNek16DXmSDXqdedINee15nXldeT16Ig16DXnNee15PXqiDXm9eQ158g15vXlNeo15fXkdeUINec16DXldep15Ag17TXlNep1506INeh157Xmdeb15XXqiDXldeZ15nXk9eV16Ig15TXodee15nXm9eV16rXtCDXqdeR15DXldeq15Ug16TXqNenLjwvbGk+PC91bD4iLCAidXNlcyI6ICI8cD48Yj4yINeT16fXsy48L2I+INeQ16jXkdei16og15TXqtek16fXmdeT15nXnSDXnNen15XXl9eZ150g15nXqdeZ16jXldeqINee16rXldeb16DXmdeqINeU15zXmdee15XXk9eZ1506INem15nXldefINee16HXpNeoINeU16LXptee15nXnSwg157Xp9eV150g15HXqdeV16jXlCwg15bXmdeU15XXmSAo15HXmdeqINee16HXpNeoINeX157XqSksINeq15DXqNeZ15ouPC9wPlxuPHVsPjxsaT48Yj7Xnteh16TXqCDXodeq157XmTwvYj4gKNen15UsINei157XldeTLCDXkdeZ16osINeY15zXpNeV158sINeq16jXkteZ15wg15fXqdeR15XXnykg4oCTINec16TXmSDXlNeQ16fXk9ee15nXlCDXnNec16nXldefINeU16LXkdeo15nXqiDXqtee15nXkyDXkdeg16fXkdeUOiDXtNen15Ug16nXqteZ15nXnde0LCDXtNei157XldeTINeQ15fXqte0LjwvbGk+XG48bGk+PGI+16rXkNeo15nXmjwvYj4g4oCTINeR15bXm9eoOiDXtNeR15DXl9eTINeR15fXldeT16nXtCwg17TXkdei16nXqNeZ150g15XXqdec15XXqdeUINeR15nXoNeV15DXqNe0ICjXm9ee15Ug15HXpNeq16jXldeg15XXqiDXlNeX15nXk9eV158g16nXnCDXlNeQ16fXk9ee15nXlCkuPC9saT5cbjxsaT7Xntep15nXnteqIDMwINeU16nXoNeZ15XXqjog15vXnteUINeb15nXodeQ15XXqiDXkdep15XXqNeUICjXm9ee15XXqiksINeR15DXmdeW15Ug16nXldeo15Qg15nXldep15HXmdedICjXodeV15PXqCksINee16HXpNeoINeU15vXmdeq15Qg15DXlSDXlNeX15PXqCAo16HXqtee15kpLCDXlNeq15DXqNeZ15og15TXmdeV150gKNeq15DXqNeZ15opLjwvbGk+PC91bD4iLCAiZ2VuZGVyIjogIjxwPjxiPjMg15PXp9ezLjwvYj4g15TXqden15XXpNeZ16og15TXnteo15vXlteZ16og16nXnCDXlNep15nXoteV16guPC9wPlxuPHVsPjxsaT7XnNeU16fXqNeZ15Ag15DXqiDXlNeY15HXnNeUINeZ15fXkywg15jXldeoINeQ15fXqCDXmNeV16guINec16nXmdedINec15Eg15zWvteU17Mg15TXnteV15PXktep16og15HXmNeV16gg15TXlteb16guPC9saT5cbjxsaT7XtNeU16TXldeaINei15wg15TXpNeV15rXtDog15HXk9eo15og15vXnNecINeU16HXmdeV157XqiDWvta415Qg157Xodee16DXqiDXoNen15HXlCAo15nXnNeT4oCT15nXnNeT15QpLCDXldeR16nXnSDXlNee16HXpNeoINeU15nXkCDXk9eV15XXp9eQINee16HXnteg16og15bXm9eoLiDXkNeqINeW15Qg157XodeR15nXqNeUINeS150g15TXkNen15PXnteZ15QgKNe016nXnSDXlNee16HXpNeoIOKAkyDXqNen16Ig15zXlNeX15zXmNeV16og15TXkNen15PXnteZ15TXtCkuPC9saT5cbjxsaT44OiDXlNeb16rXmdeRINeW15TXlCwg15TXlNeS15nXmdeUINep15XXoNeUIOKAkyDXqdaw14HXnteV1rnXoNa415Qg16HXpNeo15nXnSwg16nWsNeB157Xlda516DWtteUINee15fXkdeo15XXqi4g15bXlCDXlNee16fXldedINeU15nXl9eZ15Mg16nXkdeVINep157XoNeVINeg15nXp9eV15MsINeb15kg16nXnSDXlNeV15Ag16LXldeW16guPC9saT5cbjxsaT7Xm9ek16rXldeoINe015TXp9eo15DXqiDXlNeY15HXnNeU17Qg157Xqdeq157XqSDXkden15XXnCDXlNei15HXqNeZINep15wg15TXk9ek15PXpNefLiDXkNedINeQ15nXnyDXp9eV15wg16LXkdeo15ksINeU16fXqNeZ15DXlCDXnNeQINeq15TXmdeUINeR16jXldeo15Qg4oCTINei15PXmdejINec16fXqNeV15Ag15HXotem157Xmi48L2xpPjwvdWw+IiwgIm9uZXR3byI6ICI8cD48Yj4yINeT16fXsy48L2I+PC9wPlxuPHVsPjxsaT48Yj7XkNeX15Mv15DXl9eqPC9iPiDXkdeQ15nXnSDXkNeX16jXmSDXlNep150gKNeh16TXqCDXkNeX15MpLCDXm9ee15Ug16rXldeQ16guPC9saT5cbjxsaT48Yj4yINec16TXoNeZINep1508L2I+INeR15Ag16rXnteZ15Mg15HXpteV16jXqiDXlNeg16HXnteaOiDXqdeg15kg15fXldeT16nXmdedLCDXqdeq15kg16nXoNeZ150gKNeU15fXnNeY16og15TXkNen15PXnteZ15Qg17TXoNek16jXkyDXkNeVINeg16HXnteaINeR157Xodek16gg15TXnteV16DXlNe0KS4g15TXmNei15XXqiDXlNeg16TXldem15Qg15HXk9eZ15HXldeoOiDXtNep16rXmdeZ150g157Xl9eR16jXldeq17QuPC9saT5cbjxsaT48Yj7Xm9eq15nXkTo8L2I+INep16DXmdeZ150v16nXqteZ15nXnSDigJMg16nXqteZINeZ15XXtNeTLCDXqdeg15kv16nXqteZIOKAkyDXmdeV17TXkyDXkNeX16ouINeS150g16nXoNeZ150g16LXqdeoIC8g16nXqteZ150g16LXqdeo15Qg16DXm9eq15HXmdedINeR15nXlde015Mg15DXl9eqLjwvbGk+XG48bGk+15PXmdek16jXoNem15nXkNem15nXlDog15zXqtec157XmdeT15nXnSDXldeq15zXnteZ15PXldeqINep157Xqten16nXmdedINee16HXpNeZ16cg15zXlNeq157Xp9eTINeR16nXoNeZL9ep16rXmS4g15DXqiDXlNeb16rXmdeRINeQ16TXqdeoINec15TXqdeQ15nXqCDXnNee16rXp9eT157XmdedLjwvbGk+PC91bD4iLCAic2luZ3VsYXIiOiAiPHA+PGI+MiDXk9en17MuPC9iPiDXlNeY16jXmdenINeU15vXmSDXqdeZ157Xldep15kg15HXqdeZ16LXldeoLiDXp9eV15PXnSDXnteg15fXqdeZ150g15HXp9eV15wsINeQ15fXqCDXm9eaINec15XXl9em15nXnSDXotecINeU15vXqNeY15nXoS48L3A+XG48dWw+PGxpPteX15zXldefLCDXnNeZ15zXlCwg16nXldec15fXnyDigJMg15bXm9eoLCDXnNee16jXldeqINeU16jXkdeZ150g15HWvteV16ouINeR15nXpteULCDXqdeg15QsINee15nXnNeUIOKAkyDXoNen15HXlCwg15zXnteo15XXqiDXlNeo15HXmdedINeR1r7XmdedLjwvbGk+XG48bGk+15TXp9ep16gg15zXqteV15vXoNeZ16og15TXnNeZ157XldeT15nXnTog15HXpNeo16cg16LXnCDXlNeV16jXkNeV16og15TXm9eg15Qg157XldeW15vXqCDXtNeX157XqSDXkdeZ16bXmded17Qg15vXk9eV15LXnteUINec16nXnSDXnteh16TXqCDXkdeY16fXodeYINee16rXm9eV158uPC9saT5cbjxsaT7XqdeQ15zXqiDXlNei157Xp9eUICjXnteg16rXl9eZ150pOiDXtNec157XlCDXlNeh15nXldee16og15zXkCDXnteh16TXmden15Qg15vXk9eZINec15PXoteqP9e0PC9saT48L3VsPiIsICJjb25zdHJ1Y3QiOiAiPHA+PGI+MiDXk9en17MuPC9iPiDXnNek15kg15TXl9ec15jXqiDXlNeQ16fXk9ee15nXlCwg15zXpNeg15kg16nXnSDXnteZ15XXk9eiINeU157Xodek16jXmdedIDLigJMxMCDXkdeQ15nXnSDXkdem15XXqNeqINeU16DXodee15o6INep16DXmSDXlNee15zXkNeb15nXnSwg16nXnNeV16kg15TXoteo15nXnSwg16LXqdeo16og15TXmdec15PXmdedLjwvcD5cbjx1bD48bGk+15HXlteb16gg16jXldeQ15nXnSDXldep15XXntei15nXnSDXkNeqINeU16nXmdeg15XXmTog16nXnNeV16nXlCDihpAg16nXnNeV16nXqiwg15fXnteZ16nXlCDihpAg15fXntep16osINep15nXqdeUIOKGkCDXqdep16ouPC9saT5cbjxsaT7Xkdeg16fXkdeUINeU15vXqteZ15Eg15zXkCDXntep16rXoNeUICjXqdec15XXqSDXlNee15fXkdeo15XXqikuINeR16DXmden15XXkyDXmdepINeU15HXk9ecINen15jXnywg15DXkdecINec15vXmdeq15Qg15TXsyDXkNeZ158g16bXldeo15og15HXlS48L2xpPlxuPGxpPteU15jXoteV16og15TXoNek15XXpteUOiDXtNep15zXldep15Qg15TXmdec15PXmded17QuINeU15nXkCDXnteV16TXmdei15Qg15HXntep15nXnteUIDIuPC9saT5cbjxsaT7XkNedINeZ16kg15bXntefOiDXtNep15zXldep16og15TXodek16jXmded17QgPSDXtNeU16HXpNeo15nXnSDXlNep15zXldep15TXtCAo157Xodek16gg15DXl9eo15kg15TXqdedLCDXkdeZ15nXk9eV16IpLiDXnNeQINeX15XXkdeUINeR16nXmdei15XXqC48L2xpPjwvdWw+IiwgIm9yZGluYWwiOiAiPHA+PGI+MiDXk9en17MuPC9iPjwvcD5cbjx1bD48bGk+PGI+157Xldeg15Q8L2I+ID0g15vXnteUICjXqdec15XXqSksIDxiPteh15XXk9eoPC9iPiA9INeQ15nXlteUINeR157Xp9eV150gKNep15zXmdep15nXqikuINeU16HXldeT16gg157Xqteg15TXkiDXm9ee15Ug16rXldeQ16g6INeQ15fXqNeZINeU16nXnSwg157XqteQ15nXnSDXnNeVINeR157XmdefINeV15HWvteU17Mg15TXmdeT15nXoteULjwvbGk+XG48bGk+PGI+157XotecIDEwOjwvYj4g15DXmdefINeh15XXk9eoINee15nXldeX15MuINec16TXmSDXlNeQ16fXk9ee15nXlCDXkNek16nXqCDXtNeU16TXqNenINeU15fXnteZ16nXlCDXotep16jXtCAo15HXmdeZ15PXldeiKSDXkNeVINe016TXqNenINeX157XqSDXotep16jXlNe0ICjXm9ee16HXpNeoINeh16rXnteZKS48L2xpPlxuPGxpPjxiPtee16HXpNeoINeh16rXnteZOjwvYj4g15HXmdeqINee16HXpNeoINeX157XqSwg16fXlSDXqdeq15nXmdedLCDXotee15XXkyDXkNeX16osINeV15HXl9ep15HXldefINe015DXl9eqINeV16LXldeTINep16rXmdeZ150g4oCTINep15zXldep17QuINeb15XXnNedINeR16DXp9eR15QuPC9saT5cbjxsaT7Xm9eq15nXkTog16nXoNeZ15nXlCAo16nXqteZINeZ15XXtNeTKSwg16nXnNeZ16nXmdeqLCDXqNeR15nXoteZ16ouPC9saT48L3VsPiIsICJzb3J0IjogIjxwPjxiPjUg15PXp9ezLCDXkdeW15XXkteV16ouPC9iPiDXqNee16og15fXqdeZ15HXlDog157XmdeZ16nXnteZ150uPC9wPlxuPHVsPjxsaT7XkNek16nXqCDXnNei15HXldeTINei15wg15TXnNeV15cg15HXm9eZ16rXlCAo16rXnNee15nXkyDXkNeVINeq15zXnteZ15PXlCDXnteS15nXoteZ150g15zXnNeV15cpINeQ15Ug15HXk9ejINeU16LXkdeV15PXlC4g15zXldeX16bXmdedINei15wg157Xmdec15Qg15XXkNeWINei15wg16HXnCwg15DXlSDXkteV16jXqNeZ150uPC9saT5cbjxsaT48Yj7Xntek16rXlzo8L2I+INep15zXldep15Qg4oCTINeh16TXqNeZ150sINeX15zXldeg15XXqiwg15zXmdec15XXqiwg16nXldec15fXoNeV16osINeZ157XmdedLCDXotek16jXldeg15XXqi4g16nXnNeV16kg4oCTINee15fXkdeo15XXqiwg15HXmdem15nXnSwg157Xmdec15nXnSwg15DXkdeg15nXnSwg16nXoteV16osINeT15zXqteV16ouPC9saT5cbjxsaT7XtNeR15PXmden15TXtCDXpteV15HXoteqINeZ16jXldenL9eQ15PXldedLiDXkdee15nXnNeUINeQ15PXldee15Qg157Xldek15nXoteUINeb16nXoteV15HXqNeZ150g16LXnNeZ15Qg16bXldeo16og15TXmdeX15nXkyAo17TXl9ec15XXnyDXkNeX15PXtCkg15vXqNee15YuPC9saT5cbjxsaT7XlNeo15fXkdeUINec157XlNeZ16jXmdedOiDXnNeU15XXodeZ16Mg157Xmdec15Qg157Xqdec15TXnSDXnNeb15wg16HXnCwg15XXnNeg16HXldeqINe016nXnNeV16nXqiDXlOKApte0INei150g16nXnNeV16kg157XlNee15nXnNeZ150uPC9saT48L3VsPiIsICJodW50IjogIjxwPjxiPjUg15PXp9ezLCDXkdeW15XXkteV16ouPC9iPiDXqNee16og15fXqdeZ15HXlDog157XoNeq15fXmdedLiDXnNeV15fXpteZ150g16LXnCDXlNee15nXnNeUINeU16nXkteV15nXlC4g15TXqteZ16fXldefINeV15TXlNeh15HXqCDXnteV16TXmdei15nXnSDXnteZ15MuPC9wPlxuPHVsPjxsaT48Yj7Xntek16rXlzo8L2I+IDEuINep15zXldep15Qg16HXpNeo15nXnSDCtyAyLiDXqdeq15kg157Xl9eR16jXldeqIMK3IDMuINeR15nXqiDXnteh16TXqCDXkNeo15HXoiAo16HXqtee15kpIMK3IDQuINeX157XqSDXkNeR16DXmdedIMK3IDUuINep15zXldep16og15TXmdec15PXmdedIMK3IDYuINeR16fXldee15Qg15TXqdec15nXqdeZ16ogwrcgNy4g15HXotep16jXmdedINeV16nXnNeV16nXlCDXkdeZ16DXldeQ16ggKNeq15DXqNeZ15og15HXlteb16gpIMK3IDguINep15zXldep15Qg16LXqdeoINep15fXp9eg15nXnS48L2xpPlxuPGxpPjfigJM4INeU150g15DXqteS16guINee16nXpNeYIDgg16DXldeS16Ig15HXnteh16TXqNeZ150gMTHigJMxOSAo16nXnNeV16nXlCDXotep16gg15HXlteb16gsINep15zXldepINei16nXqNeUINeR16DXp9eR15QpIOKAkyDXnNek15kg16rXldeb16DXmdeqINeU15zXmdee15XXk9eZ150g15bXlCDXtNep15nXnteV16kg16rXp9eZ15/XtCDXldec15Ag15fXldeR15Qg15zXnNee15Mg15vXkNefINeQ16og15vXnCDXlNeY15HXnNeULjwvbGk+XG48bGk+15fXqdeV15Eg16nXlNeW15XXkteV16og15nXodeR15nXqNeVINeQ16og15TXqteZ16fXldefINeR16LXnCDXpNeULCDXldec15Ag16jXpyDXmdee16bXkNeVINeQ15XXqteVLjwvbGk+PC91bD4iLCAicXVpeiI6ICI8cD48Yj41INeT16fXsywg15vXnCDXlNeb15nXqteULjwvYj4gOCDXqdeQ15zXldeqINeR15fXntepINeo157XldeqINeX16nXmdeR15QgKNeW15XXm9eo15nXnSDCtyDXnteR15nXoNeZ150gwrcg157XmdeZ16nXnteZ150gwrcg157XoNeq15fXmdedIMK3INee16LXqNeZ15vXmdedKS48L3A+XG48dWw+PGxpPtep15nXmNeUINee15XXptei16o6INeU15vXmdeq15Qg157XpteR15nXoteUINeR15DXpteR16LXldeqICgx4oCTNCkg15XXqNenINeQ15Yg15zXldeX16bXmdedINei15wg15TXqtep15XXkdeULiDXlNeU16HXkdeoINee15XXpNeZ16Ig15DXl9eo15kg15TXnNeX15nXpteULjwvbGk+XG48bGk+PGI+157XpNeq15c6PC9iPiAx4oCT16nXnNeV16nXlCDXodek16jXmdedIMK3IDLigJPXqdeq15kgwrcgM+KAk9eb15kg15HXmdem15Qg16DXp9eR15QgwrcgNOKAk9eR16rXl9eg15Qg15TXqdec15nXqdeZ16ogwrcgNeKAk9en15Ug15fXntepIMK3IDbigJPXodek16jXmdedINee16HXldeZ157XmdedIMK3IDfigJPXkNeo15HXoteUINeX15zXldeg15XXqiDCtyA44oCT15HXnyDXkNeX16og16LXqdeo15QuPC9saT5cbjxsaT7XqdeQ15zXlCA4OiDXkdeS15nXnCDXodeV16TXqNeZ150g16nXoNeZ150gKNe015HXnyDXkNeX16og16LXqdeo15Qg16nXoNeZ153XtCksINeV16nXoNeUINeU15nXkCDXoNen15HXlC4g15zXm9efINeS150g15nXnNeTINeV15LXnSDXmdec15PXlDog15HXny/XkdeqINeQ15fXqiDXotep16jXlC4g15HXk9eZ15HXldeoINeo15HXmdedINeQ15XXnteo15nXnSDXtNeR158g15DXl9eTINei16nXqNeU17Qg4oCTINep15XXldeUINec15PXldefINeR15bXlC48L2xpPjwvdWw+IiwgInBhaXJzIjogIjxwPjxiPjYg15PXp9ezLCDXkdeW15XXkteV16ouPC9iPiDXqNee16og15fXqdeZ15HXlDog15nXldem16jXmdedLiDXnNeV15cg15HXl9eZ16jXlCDXotedIDYg15PXqNeb15nXnSwg15XXnNeb15wg15PXqNeaINee15fXldeV158g15TXptec15fXlCDXp9em16guPC9wPlxuPHVsPjxsaT7XlNeo16nXmdee15Qg15HXpteTINeZ157XmdefINeU15nXkCDXlNee15fXldeV158g15TXntep15XXqtejINec15vXnCDXlNeT16jXm9eZ1506IDIg15bXm9eoLCAyINeg16fXkdeULCDXqdeg15kv16nXqteZLCDXnteZ15XXk9eiLCDXodeV15PXqCwg16rXkNeo15nXmiDXkNeVINeh16rXnteZLjwvbGk+XG48bGk+15DXnSDXkNeZ158g15bXntefINec16HXmdeZ1506INec15TXntep15nXmiDXkdep15nXoteV16gg15TXkdeQLCDXkNeVINec16rXqiDXm9ep15nXoteV16jXmSDXkdeZ16ouINeU15TXnteX15bXldeqINeV15TXpNeo16HXldee15XXqiDXnteV16bXkteV16og15HXpNeq15nXl9eqINeU16nXmdei15XXqCDXlNeR15AuPC9saT5cbjxsaT7XkdeT15nXp9eqINei157Xmdeq15nXnTog15vXnCDXlteV15Ig157Xodee158g4pyTINec15nXkyDXm9ecINem15nXqNeV16Mg16DXm9eV158g15DXptecINeU15bXldeSINeU16nXoNeZLCDXldee16fXmdejINem15nXqNeV16Mg16nXpteo15nXmiDXnNeR15PXldenLjwvbGk+XG48bGk+15TXm9ec15Q6INee15kg16nXnteq16fXqdeZ150g15HXm9eq15nXkdeUINeZ15vXldec15nXnSDXnNeR15fXldeoINeU157Xl9eW15QsINek16jXodeV157XqiDXp9eV15zXmdeqINeQ15Ug15jXkdec16og157XnNeQ15kuPC9saT48L3VsPiIsICJzdW1tYXJ5IjogIjxwPjxiPjMg15PXp9ezLjwvYj4g15zXp9eo15XXkCDXkNeqINeX157XqdeqINeU15vXnNec15nXnS4g15DXpNep16gg15zXkden16kg157Xqtec157XmdeT15nXnSDXldeq15zXnteZ15PXldeqINec16rXqiDXk9eV15LXnteUINee16nXnNeU150g15zXm9ecINeb15zXnC48L3A+XG48dWw+PGxpPtep15nXqteV16Mg15HXlteV15I6INeQ15nXlteUINeb15zXnCDXlNeb15kg157XpNeq15nXoj8gKNeR15PXqNeaINeb15zXnDog17TXlNek15XXmiDXotecINeU16TXldea17Qg15DXlSDXtNeR15XXk9en15nXnSDXkdeZ15fXmdeT17QpLjwvbGk+XG48bGk+15vXk9eQ15kg15zXlNep15DXmdeoINeQ16og15TXqden15XXpNeZ16og15TXlteVINei15wg15TXnNeV15cg15HXltee158g15vXqNeY15nXoSDXlNeZ16bXmdeQ15QuPC9saT48L3VsPiIsICJleGl0IjogIjxwPjxiPjMg15PXp9ezLCDXkNeZ16nXmdeqLCDXkdeT16Mg15TXoteR15XXk9eULjwvYj48L3A+XG48dWw+PGxpPjxiPtee16TXqteXOjwvYj4gMS4g15DXqNeR16LXlCDXotek16jXldeg15XXqiwg16nXoNeZINee15fXp9eZ150gwrcgMi4g15fXntepINee15nXnNeZ150gKNee15nXnNeUIOKAkyDXoNen15HXlCwg157Xmdec15Qg15DXl9eqKSDCtyAzLiDXpNeq15XXlywg15zXntep15w6INe016nXnNeV16nXqiDXlNeX15zXldeg15XXqiDXkdeb15nXqteUINep15zXoNeVINek16rXldeX15nXnSwg15XXlNep15XXnNeX158g16nXnNeZINeR16nXldeo15Qg15TXqdeg15nXmdeULte0PC9saT5cbjxsaT7XlNei16jXm9eUINee16LXpteR16o6INec16TXmSDXlNeh15nXnteV158g8J+YgC/wn5mCL/CfpJQg15XXnNek15kg16nXkNec15QgMiDXkNek16nXqCDXnNeT16LXqiDXnteZINem16jXmdeaINeX15bXqNeUINei15wg17TXkdeV15PXp9eZ150g15HXmdeX15nXk9e0LjwvbGk+PC91bD4iLCAiY3JlZGl0cyI6ICI8cD7XqteV15vXoNeZ16og15TXnNeZ157XldeT15nXnTog17TXl9eZ16DXldeaINec16nXldeg15k6INei15HXqNeZ16og4oCTINep16TXlCwg16HXpNeo15XXqiDXldeq16jXkdeV16og15zXkdeZ16og15TXodek16gg15TXmdeh15XXk9eZ17QsINee16nXqNeTINeU15fXmdeg15XXmiDigJMg16DXldep15Ag17TXqdedINeU157Xodek16jXtCDXkdei157XsyA2Nywg15XXpteZ15XXoNeZINeU15PXqNeaINe016LXkyDXodeV16Mg15vXmdeq15Qg15XXs9e0INeR16LXntezIDkwICjXtNeU15vXqNeqINeT16jXm9eZINeU16nXmdee15XXqSDXkdep157XldeqINeU157Xodek16gg15zXnteY16jXldeqINep15XXoNeV16o7INeU15HXl9eg15Qg15HXmdefINeW15vXqCDXnNeg16fXkdeUINeR16nXnteV16og157Xodek16gg15XXqdeZ157XldepINeq16fXmdefINeR15TXnde0KS48L3A+XG48cD7Xm9ecINeT15XXktee15Qg15HXntem15LXqiDXoNeR15PXp9eUINee15XXnCDXlNeX15zXmNeV16og15TXkNen15PXnteZ15Qg15zXnNep15XXnyDXlNei15HXqNeZ16og15HXoNeV16nXkCDXqdedINeU157Xodek16guINeU16fXmdep15XXqNeZ150g15HXqden15XXpNeZ16ouPC9wPiJ9</script>
+<footer class="site-foot" role="contentinfo"><span class="made">נוצר עבור המורה · שפה, כיתה ה׳</span><span class="sep">|</span><a href="#credits" data-goto="credits">מקורות וקרדיטים</a><span class="sep">|</span><a href="teacher.html">אזור המורים</a><span class="sep">|</span><a href="handout.html">דף עבודה להדפסה</a></footer>
+<script src="assets/deck.js"></script>
+</body></html>
